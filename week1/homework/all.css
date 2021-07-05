@@ -1,9 +1,9 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Roboto&display=swap");
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Roboto&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -129,7 +129,7 @@ table {
   font-size: 1.25rem;
 }
 
-.font-basic {
+.font-basic, .profile .profile-body p, .education .education-item {
   font-size: 1.5rem;
 }
 
@@ -149,11 +149,11 @@ table {
   font-family: 'Roboto';
 }
 
-.line-height-sm {
+.lh-sm {
   line-height: 1.3;
 }
 
-.line-height-md {
+.lh-md, .profile .profile-body p {
   line-height: 1.5;
 }
 
@@ -169,11 +169,11 @@ table {
   color: #fff;
 }
 
-/* 整體 */
 body {
-  font-family: 'Noto Sans TC', 'PingFang', sans-serif;
+  font-family: "Noto Sans CJK TC", PingFang, "Microsoft JhengHei", STHeiti, sans-serif, serif;
 }
 
+/* 整體 */
 .name-img {
   padding: 3rem 0;
   max-width: 324px;
@@ -185,6 +185,10 @@ body {
 
 .education {
   margin-bottom: 4.5rem;
+}
+
+.education .education-item + .education-item {
+  padding-top: 1.5rem;
 }
 
 .skill {
@@ -201,6 +205,10 @@ body {
 
 .skill .skill-lists {
   padding-left: 1rem;
+}
+
+.skill .skill-item {
+  font-weight: 300;
 }
 
 .work {
