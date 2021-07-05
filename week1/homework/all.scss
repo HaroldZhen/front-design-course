@@ -1,20 +1,31 @@
+@import './asset/scss/reset';
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Roboto&display=swap');
-@import './asset/scss/_reset';
 @import './asset/scss/font';
 @import './asset/scss/utilities';
-/* 整體 */
 body{
-  font-family: 'Noto Sans TC', 'PingFang', sans-serif;
+  font-family: "Noto Sans CJK TC", PingFang, "Microsoft JhengHei", STHeiti, sans-serif, serif;
 } 
+/* 整體 */
+
 .name-img{
   padding: 3rem 0;
   max-width: 324px;
 }
 .profile{
   margin-bottom: 4.5rem;
+  .profile-body p{
+    @extend .lh-md;
+    @extend .font-basic;
+  }
 }
 .education{
   margin-bottom: 4.5rem;
+  .education-item {
+    @extend .font-basic;
+    + .education-item {
+      padding-top: 1.5rem;
+    }
+  }
 }
 
 .skill{
@@ -28,6 +39,9 @@ body{
   }
   .skill-lists {
     padding-left: 1rem;
+  }
+  .skill-item{
+    font-weight: 300;
   }
 }
 
