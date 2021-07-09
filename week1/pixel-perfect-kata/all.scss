@@ -1,27 +1,32 @@
-@import '_reset';
-.container{
+@import "_reset";
+
+.container {
   max-width: 640px;
   margin: 0 auto;
 }
-main{
+
+main {
   display: flex;
 }
-.news{
+
+.news {
   margin-bottom: 24px;
 }
-.news-item{
+.news-item {
   display: flex;
+
   & + & {
     margin-top: 24px;
   }
 }
-.news-body{
+
+.news-body {
   padding: 0 20px;
-  h2{
+  h2 {
     font-size: 20px;
     line-height: 1.2;
   }
-  p{
+  p {
     line-height: 1.5;
   }
 }

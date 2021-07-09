@@ -7,29 +7,22 @@ body{
 } 
 /* 整體 */
 
-.name-img{
+.header-img{
   padding: 3rem 0;
   max-width: 324px;
 }
-.profile{
-  margin-bottom: 4.5rem;
-  .profile-body p{
-    @extend .lh-md;
-    @extend .font-basic;
-  }
+.profile-body p{
+  line-height: 1.5;
+  font-size: 1.5rem;
 }
-.education{
-  margin-bottom: 4.5rem;
-  .education-item {
-    @extend .font-basic;
-    + .education-item {
-      padding-top: 1.5rem;
-    }
+.education-item {
+  font-size: 1.5rem;
+  + .education-item {
+    padding-top: 1.5rem;
   }
 }
 
 .skill{
-  margin-bottom: 4.5rem;
   padding: 2.25rem 4rem;
   .skill-wrap{
     display: flex;
@@ -39,33 +32,23 @@ body{
   }
   .skill-lists {
     padding-left: 1rem;
-  }
-  .skill-item{
     font-weight: 300;
   }
 }
 
-.work{
-  margin-bottom: 4.5rem;
-  .work-wrap{
-    display: flex;
-    justify-content: center;
-    transform: translateX(-.5rem);
-    padding-top: 1rem;
-    margin-left: 2rem;
-    max-width: calc(1200px / 12 * 7);
+.work-lists {
+  padding-top: 1rem;
+  margin-left: 2rem;
+  max-width: calc(1200px / 12 * 7);
+  padding-left: 1rem;
+}
+.work-item {
+  + .work-item {
+    margin-top: 1.5em;
   }
-  .work-lists {
-    padding-left: 1rem;
-  }
-  .work-item {
-    + .work-item {
-      margin-top: 1.5em;
-    }
-  }
-  .work-img{
-    width: 90px;
-  }
+}
+.work-img{
+  width: 90px;
 }
 .contact{
   padding: 1.5rem 0;
@@ -79,8 +62,9 @@ body{
   justify-content: center;
   margin-bottom: 0.75em;
   .social-item {
+    width: 36px;
     + .social-item {
-      margin-left: 1rem;
+      margin-left: 2rem;
     }
   }
 }
