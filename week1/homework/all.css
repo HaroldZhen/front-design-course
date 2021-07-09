@@ -56,7 +56,7 @@ table {
 
 /* 引入字型 PingFang */
 @font-face {
-  font-family: PingFang;
+  font-family: PingFang, sans-serif;
   src: url(./asset/font/PingFangTC-Regular.ttf);
 }
 
@@ -133,24 +133,20 @@ table {
   font-size: 1.25rem;
 }
 
-.font-basic {
-  font-size: 1.5rem;
-}
-
 .font-xxl {
   font-size: 5rem;
 }
 
 .font-noto {
-  font-family: 'Noto Sans TC';
+  font-family: 'Noto Sans TC', sans-serif;
 }
 
 .font-pingfang {
-  font-family: 'PingFang';
+  font-family: 'PingFang', sans-serif;
 }
 
 .font-roboto {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
 }
 
 .lh-sm {
@@ -169,23 +165,31 @@ table {
   text-transform: uppercase;
 }
 
-.text-while {
+.text-white {
   color: #fff;
 }
 
 body {
   font-family: "Noto Sans CJK TC", PingFang, "Microsoft JhengHei", STHeiti, sans-serif, serif;
+  line-height: 1.5;
 }
 
 /* 整體 */
+img {
+  display: block;
+}
+
 .header-img {
   padding: 3rem 0;
   max-width: 324px;
 }
 
-.profile-body p {
-  line-height: 1.5;
+.profile-item {
   font-size: 1.5rem;
+}
+
+.profile-item + .profile-item {
+  padding-top: 1.5rem;
 }
 
 .education-item {
@@ -201,13 +205,14 @@ body {
 }
 
 .skill .skill-wrap {
-  display: flex;
-  justify-content: center;
   transform: translateX(-0.5rem);
   padding-top: 1rem;
+  text-align: center;
 }
 
 .skill .skill-lists {
+  display: inline-block;
+  text-align: left;
   padding-left: 1rem;
   font-weight: 300;
 }
@@ -232,8 +237,8 @@ body {
 }
 
 .contact .contact-item {
-  display: block;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .social {
@@ -242,11 +247,11 @@ body {
   margin-bottom: 0.75em;
 }
 
-.social .social-item {
-  width: 36px;
-}
-
 .social .social-item + .social-item {
   margin-left: 2rem;
+}
+
+.social .social-img {
+  width: 36px;
 }
 /*# sourceMappingURL=all.css.map */
