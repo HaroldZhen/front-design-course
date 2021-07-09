@@ -1,36 +1,45 @@
-@import './asset/scss/reset';
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Roboto&display=swap');
-@import './asset/scss/font';
-@import './asset/scss/utilities';
-body{
-  font-family: "Noto Sans CJK TC", PingFang, "Microsoft JhengHei", STHeiti, sans-serif, serif;
-} 
+@import "./asset/scss/reset";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Roboto&display=swap");
+@import "./asset/scss/font";
+@import "./asset/scss/utilities";
+body {
+  font-family: "Noto Sans CJK TC", PingFang, "Microsoft JhengHei", STHeiti,
+    sans-serif, serif;
+  line-height: 1.5;
+}
 /* 整體 */
 
-.header-img{
+img {
+  display: block;
+}
+
+.header-img {
   padding: 3rem 0;
   max-width: 324px;
 }
-.profile-body p{
-  line-height: 1.5;
+.profile-item {
   font-size: 1.5rem;
+  & + & {
+    padding-top: 1.5rem;
+  }
 }
 .education-item {
   font-size: 1.5rem;
-  + .education-item {
+  & + & {
     padding-top: 1.5rem;
   }
 }
 
-.skill{
+.skill {
   padding: 2.25rem 4rem;
-  .skill-wrap{
-    display: flex;
-    justify-content: center;
-    transform: translateX(-.5rem);
+  .skill-wrap {
+    transform: translateX(-0.5rem);
     padding-top: 1rem;
+    text-align: center;
   }
   .skill-lists {
+    display: inline-block;
+    text-align: left;
     padding-left: 1rem;
     font-weight: 300;
   }
@@ -47,24 +56,26 @@ body{
     margin-top: 1.5em;
   }
 }
-.work-img{
+.work-img {
   width: 90px;
 }
-.contact{
+.contact {
   padding: 1.5rem 0;
-  .contact-item{
-    display: block;
+  .contact-item {
     margin-bottom: 1rem;
+    text-align: center;
   }
 }
-.social{
+.social {
   display: flex;
   justify-content: center;
   margin-bottom: 0.75em;
   .social-item {
-    width: 36px;
     + .social-item {
       margin-left: 2rem;
     }
+  }
+  .social-img {
+    width: 36px;
   }
 }
