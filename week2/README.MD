@@ -4,7 +4,7 @@
 
 Demo：https://haroldzhen.github.io/front-design-course/week2/
 
-練習影片：https://youtu.be/bW453bMg7WI
+練習影片：https://youtu.be/1Oc2RLh7pOg
 
 最佳成績：24:53
 
