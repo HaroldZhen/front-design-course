@@ -1,20 +1,90 @@
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500;1,700;1,900&display=swap");
-@import "./reset";
-/* 共用區 */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+  text-decoration: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 body {
   line-height: 1.5;
   font-family: "Roboto", sans-serif;
 }
+
 *::before,
 *::after {
   box-sizing: border-box;
 }
+
 img {
   display: block;
 }
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.bg-black {
+  background-color: #000;
+  color: #fff;
+}
+
 .container {
   width: 1200px;
 }
+
 .profile {
   width: 100%;
   height: 100vh;
@@ -24,141 +94,167 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
 }
+
 .profile__wrap {
   width: 304px;
+  color: #fff;
 }
+
 .profile__text {
   font-size: 1.5rem;
   line-height: 1.75rem;
 }
+
 .profile__title {
   font-size: 5rem;
   margin-bottom: 2rem;
   line-height: 1.3;
   font-weight: 900;
 }
+
 .profile__content {
   font-size: 1.5rem;
-  margin-left: 13px;
-  margin-right: 8px;
+  margin-left: 0.875rem;
 }
-.prifile__job {
+
+.profile__position {
   margin-bottom: 2.5rem;
 }
+
 .social__list {
+  margin-top: 2.5rem;
   display: flex;
   justify-content: space-between;
 }
+
 .about {
   text-align: center;
   padding: 3.5rem 0;
 }
-.about__title {
-  font-size: 4rem;
-  margin-bottom: 2.5rem;
-}
+
 .about__wrap {
   width: 384px;
   margin: 0 auto;
   font-weight: bold;
 }
+
+.about__title {
+  font-size: 4rem;
+}
+
+.about__img {
+  margin-bottom: 1.25rem;
+}
+
 .about__list {
   margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #000;
 }
+
 .about__item {
-  font-size: 1.5rem;
+  font-size: 1.5em;
   line-height: 1.75;
 }
+
 .about__school {
-  line-height: 1.5;
-  margin: 0 -14px;
+  margin: 0 -0.875rem;
 }
-.about__joblist {
-  border-top: 1px solid #000;
-}
-.about__job {
+
+.about__position {
   font-size: 1.5rem;
   line-height: 1.75;
   margin-top: 1.75rem;
-  span {
-    position: relative;
-    &::after {
-      content: "";
-      width: 22px;
-      height: 22px;
-      background-color: #891818;
-      border-radius: 50%;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      left: -2rem;
-    }
-  }
 }
+
+.about__position span {
+  position: relative;
+}
+
+.about__position span::after {
+  content: '';
+  width: 22px;
+  height: 22px;
+  background-color: #891818;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -2rem;
+}
+
 .brand {
-  background-color: #000;
-  color: #fff;
   padding-top: 3.5rem;
+  color: #fff;
+  background-color: #000;
 }
+
 .brand__wrap {
   margin: 0 auto;
   text-align: center;
 }
-.brand__title {
-  font-size: 4rem;
-  line-height: 1.3;
-}
+
 .brand__list {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
+
+.brand__title {
+  font-size: 4rem;
+  line-height: 1.3;
+}
+
 .brand__item {
   margin: 0 auto;
+  margin-bottom: 2.5rem;
 }
+
 .brand__subtitle {
   font-size: 1.5rem;
   line-height: 1.75;
   margin-bottom: 2rem;
 }
+
 .brand__content {
   margin-bottom: 4.25rem;
 }
-.brand__item {
-  margin-bottom: 2.5rem;
-}
+
 .work {
   padding: 3.5rem 0;
 }
-.work_wrap {
+
+.work__wrap {
   margin: 0 auto;
   text-align: center;
 }
+
 .work__title {
   font-size: 4rem;
   line-height: 1.3;
   margin-bottom: 1rem;
 }
+
 .work__subtitle {
   font-size: 1.25rem;
-  line-height: 1.5;
-  margin-bottom: 3.5em;
+  margin-bottom: 3.5rem;
 }
+
 .work__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
 .work__item {
   margin-bottom: 3rem;
 }
+
 .work__text {
   margin-top: 1rem;
   font-size: 1.25rem;
-  line-height: 1.5;
 }
 
 .contact {
@@ -167,18 +263,18 @@ img {
   padding: 4rem 0;
   text-align: center;
 }
+
 .contact__title {
   font-weight: 500;
   font-size: 4rem;
   line-height: 1.3;
 }
+
 .contact__item {
   font-size: 1.5rem;
-  & + & {
-    margin-top: 1rem;
-  }
 }
-.contact__link {
-  color: #fff;
-  text-decoration: none;
+
+.contact__item + .contact__item {
+  margin-top: 1rem;
 }
+/*# sourceMappingURL=all.css.map */
