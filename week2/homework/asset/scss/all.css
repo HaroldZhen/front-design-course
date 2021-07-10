@@ -188,9 +188,13 @@ img {
 
 .brand__list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.brand__item {
+  margin: 0 auto;
 }
 
 .brand__subtitle {
@@ -201,11 +205,6 @@ img {
 
 .brand__content {
   margin-bottom: 4.25rem;
-}
-
-.brand__c {
-  width: 320px;
-  margin: 0 auto;
 }
 
 .brand__item {
