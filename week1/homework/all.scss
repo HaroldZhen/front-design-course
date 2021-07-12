@@ -61,7 +61,7 @@ img {
   .contact-item {
     margin-bottom: 1rem;
     text-align: center;
-    transition: all .2s;
+    transition: color .2s;
     &:hover a {
       color: $gray;
     }
@@ -78,10 +78,9 @@ img {
   }
   .social-img {
     width: 36px;
-    transition: all .2s;
+    transition: margin .2s;
     &:hover {
       margin-top: -.2rem;
-      
     }
   }
 }

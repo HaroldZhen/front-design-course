@@ -231,7 +231,7 @@ img {
 .contact .contact-item {
   margin-bottom: 1rem;
   text-align: center;
-  transition: all .2s;
+  transition: color .2s;
 }
 
 .contact .contact-item:hover a {
@@ -250,7 +250,7 @@ img {
 
 .social .social-img {
   width: 36px;
-  transition: all .2s;
+  transition: margin .2s;
 }
 
 .social .social-img:hover {
