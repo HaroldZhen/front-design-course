@@ -153,10 +153,6 @@ table {
   line-height: 1.3;
 }
 
-.lh-md {
-  line-height: 1.5;
-}
-
 .text-red {
   color: #A00404;
 }
@@ -186,10 +182,6 @@ img {
 
 .profile-item {
   font-size: 1.5rem;
-}
-
-.profile-item + .profile-item {
-  padding-top: 1.5rem;
 }
 
 .education-item {
@@ -239,6 +231,11 @@ img {
 .contact .contact-item {
   margin-bottom: 1rem;
   text-align: center;
+  transition: all .2s;
+}
+
+.contact .contact-item:hover a {
+  color: #96A9C4;
 }
 
 .social {
@@ -253,5 +250,10 @@ img {
 
 .social .social-img {
   width: 36px;
+  transition: all .2s;
+}
+
+.social .social-img:hover {
+  margin-top: -.2rem;
 }
 /*# sourceMappingURL=all.css.map */

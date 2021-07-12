@@ -19,9 +19,6 @@ img {
 }
 .profile-item {
   font-size: 1.5rem;
-  & + & {
-    padding-top: 1.5rem;
-  }
 }
 .education-item {
   font-size: 1.5rem;
@@ -64,6 +61,10 @@ img {
   .contact-item {
     margin-bottom: 1rem;
     text-align: center;
+    transition: all .2s;
+    &:hover a {
+      color: $gray;
+    }
   }
 }
 .social {
@@ -77,5 +78,10 @@ img {
   }
   .social-img {
     width: 36px;
+    transition: all .2s;
+    &:hover {
+      margin-top: -.2rem;
+      
+    }
   }
 }
