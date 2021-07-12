@@ -7,7 +7,7 @@ Demo：https://haroldzhen.github.io/front-design-course/week1/homework/
 ## KATA:pixel
 CodePen: https://codepen.io/YuWin0805/pen/abWvPvb
 
-Demo：https://haroldzhen.github.io/front-design-course/week1/kata/
+Demo：https://haroldzhen.github.io/front-design-course/week1/pixel-perfect-kata/
 
 練習影片：https://www.youtube.com/watch?v=XFgbsW7cj_Q
 
