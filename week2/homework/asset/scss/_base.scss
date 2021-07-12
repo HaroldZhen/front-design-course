@@ -1,0 +1,42 @@
+%content{
+  font-size: map-get($fz, 'md');
+  line-height: map-get($lh, 'lg');
+}
+body{
+  line-height: 1.5;
+  font-size: 1.25rem;
+  font-family: "Roboto", sans-serif;
+}
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+img {
+  display: block;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.bg-black{
+  background-color: $black;
+  color: $white;
+}
+.container{
+  width: 1200px;
+}
+.text-white{
+  color: $white;
+}
+.text-center{
+  text-align: center;
+}
+.mx-auto{
+  margin: 0 auto;
+}
+.d-inline-block{
+  display: inline-block;
+}
+.border-1{
+  border-bottom: 1px solid $black;
+}

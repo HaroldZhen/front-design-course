@@ -1,0 +1,46 @@
+@each $name, $value in $font {
+  .font-#{$name} {
+    font-weight: $value;
+  }
+}
+@each $name, $value in $fz {
+  .fz-#{$name} {
+    font-size: $value;
+  }
+}
+@each $name, $value in $lh {
+  .lh-#{$name} {
+    line-height: $value;
+  }
+}
+@each $name, $value in $space {
+  .mt-#{$name} {
+    margin-top: $value;
+  }
+  .mb-#{$name} {
+    margin-bottom: $value;
+  }
+  .mr-#{$name} {
+    margin-right: $value;
+  }
+  .ml-#{$name} {
+    margin-left: $value;
+  }
+  .pt-#{$name} {
+    padding-top: $value;
+  }
+  .pb-#{$name} {
+    padding-bottom: $value;
+  }
+  .pr-#{$name} {
+    padding-right: $value;
+  }
+  .pl-#{$name} {
+    padding-left: $value;
+  }
+}
+@mixin bgImg-cover($url) {
+  background-image: url($url);
+  background-size: cover;
+  background-position: center;
+}
