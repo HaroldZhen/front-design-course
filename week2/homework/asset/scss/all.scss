@@ -4,8 +4,10 @@
 @import "./mixin";
 @import "./base";
 img {
+  transition: all .3s;
   &:hover {
     filter: opacity(0.8);
+    transform: translateY(-5px);
   }
 }
 /* Profile */

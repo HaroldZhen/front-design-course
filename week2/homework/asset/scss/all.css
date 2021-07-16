@@ -507,8 +507,13 @@ a {
   border-bottom: 1px solid #000;
 }
 
+img {
+  transition: all .3s;
+}
+
 img:hover {
   filter: opacity(0.8);
+  transform: translateY(-5px);
 }
 
 /* Profile */
